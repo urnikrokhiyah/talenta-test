@@ -9,5 +9,6 @@ func New() *echo.Echo {
 	e := echo.New()
 	e.GET("/", controllers.TestController)
 	e.GET("/palindrome", controllers.PalindromeController)
+	e.GET("/languages", controllers.LanguageController)
 	return e
 }
