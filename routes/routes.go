@@ -8,6 +8,6 @@ import (
 func New() *echo.Echo {
 	e := echo.New()
 	e.GET("/", controllers.TestController)
+	e.GET("/palindrome", controllers.PalindromeController)
 	return e
-
 }

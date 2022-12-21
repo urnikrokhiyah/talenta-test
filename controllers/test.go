@@ -6,6 +6,6 @@ import (
 )
 
 func TestController(c echo.Context) error {
-	result := map[string]string{"message": "Hello Go developers!"}
+	result := map[string]string{"message": "Hello Go developers"}
 	return c.JSON(http.StatusOK, result)
 }
